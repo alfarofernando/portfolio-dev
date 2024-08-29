@@ -1,0 +1,46 @@
+.contactButtonGroup{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+    margin: 1rem;
+}
+
+.contactButton{
+    text-decoration: none;
+}
+
+.contactButton img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.contactButton img:hover{
+    transform: scale(2);
+    transition: transform 1s ease;
+}
+
+.redes-sociales-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 9999
+}
+
+.redes-sociales {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+    font-size: 1.5rem;
+    background-color: rgba(255, 0, 0, 0);
+}
+
+.redes-sociales a {
+    text-decoration: none;
+}
+
+.redes-sociales a:hover {
+    transform: scale(2);
+    transition: transform 1s ease;
+}

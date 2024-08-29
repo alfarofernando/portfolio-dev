@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import styles from "./MainNavigationBar.module.css";
 
 function CollapsibleExample() {
   return (
@@ -11,13 +12,13 @@ function CollapsibleExample() {
       bg="dark"
       data-bs-theme="dark"
       expand="md    "
-      className="bg-body-dark"
+      className={`bg-body-dark ${styles.navbar}`}
     >
       <Container>
         <Navbar.Brand href="#home">AlfaDeveloper</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className={`me-auto ${styles.nav}`}>
             <Nav.Link href="#features">Inicio</Nav.Link>
             <NavDropdown title="Proyectos" id="collapsible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Portfolio</NavDropdown.Item>
